@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.beta1'
 
-gem 'sqlite3'
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -36,3 +34,27 @@ gem 'jbuilder', '~> 1.0.1'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'devise'
+gem 'figaro'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'sqlite3'
+  gem 'puma'
+
+  gem 'factory_girl_rails'
+
+  gem 'quiet_assets'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'email_spec'
+  gem 'cucumber-rails'
+  gem 'launchy'
+  gem 'capybara'
+end
