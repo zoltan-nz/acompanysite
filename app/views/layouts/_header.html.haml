@@ -1,5 +1,4 @@
-%nav.nav
-  %div.navbar
-    %div.navbar-inner
-      = link_to 'Home', root_path, class: 'brand'
-      = link_to 'About', '', class: ''
+%header.navbar.navbar-fixed-top
+  %nav.navbar-inner
+    .container
+      = render 'layouts/navigation'

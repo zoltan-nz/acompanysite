@@ -1,10 +1,16 @@
 !!!
 %html
   %head
-    %title Acompanysite
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1"}
+    %title= content_for?(:title) ? yield(:title) : "A Company Site"
+    %meta{content: "", name: "description"}
+    %meta{content: "Zoltan Debre", name: "author"}
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    = yield(:head)
   %body
     = render 'layouts/header'
-    = yield
+    = render 'layouts/main'
+    = render 'layouts/footer'
