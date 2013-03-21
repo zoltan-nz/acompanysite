@@ -1,1 +1,15 @@
-%h1 Pages#Home
+%div#myCarousel.carousel.slide
+  %ol.carousel-indicators
+    %li.active{data: {target: '#myCarousel', slide_to: '0'}}
+    %li{data: {target: '#myCarousel', slide_to: '1'}}
+    %li{data: {target: '#myCarousel', slide_to: '2'}}
+  %div.carousel-inner
+    %div.item.active
+      =image_tag 'slide-01.jpg'
+      %h1 Nice marketing message comes here
+    %div.item
+      =image_tag 'slide-02.jpg'
+    %div.item
+      =image_tag 'slide-03.jpg'
+  %a.carousel-control.left{href: "#myCarousel", "data-slide" => 'prev'} &lsaquo;
+  %a.carousel-control.right{href: "#myCarousel", "data-slide" => 'next'} &rsaquo;
