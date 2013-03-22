@@ -5,6 +5,10 @@ ruby "2.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.beta1'
 
+#Ransack gem for object-base searching
+gem "ransack", :git => "git://github.com/ernie/ransack.git"
+
+gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -54,7 +58,7 @@ gem 'figaro'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'sqlite3'
+
   gem 'puma'
 
   gem 'factory_girl_rails'
