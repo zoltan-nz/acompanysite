@@ -94,7 +94,7 @@ GEM
       formtastic-bootstrap
     gherkin (2.11.6)
       json (>= 1.7.6)
-    haml (4.0.0)
+    haml (4.0.1)
       tilt
     haml-rails (0.4)
       actionpack (>= 3.1, < 4.1)
@@ -118,7 +118,7 @@ GEM
     mime-types (1.21)
     minitest (4.7.0)
     multi_json (1.7.1)
-    nokogiri (1.5.8)
+    nokogiri (1.5.9)
     orm_adapter (0.0.7)
     polyglot (0.3.3)
     puma (1.6.3)
