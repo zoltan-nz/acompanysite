@@ -70,3 +70,7 @@ group :test do
   gem 'launchy'
   gem 'capybara'
 end
+
+#group :production do
+#  gem 'pg'
+#end
