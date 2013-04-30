@@ -1,4 +1,14 @@
-%header.navbar.navbar-fixed-top
-  %nav.navbar-inner
+.container
+  .row
+    .span5.pull-left
+      .logo
+        =link_to image_tag('keocko.png'), '#'
+%header
+  .navbar-wrapper
     .container
-      = render 'layouts/navigation'
+      .navbar.navbar-inverse
+        %nav.navbar-inner#navmenu{role: 'navigation'}
+          %ul.nav
+            %li=link_to 'HOME', '#'
+            %li=link_to 'ABOUT US', '#'
+            %li=link_to 'SERVICES', '#'

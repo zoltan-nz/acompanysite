@@ -5,13 +5,38 @@
     %li{data: {target: '#myCarousel', slide_to: '2'}}
   .carousel-inner
     .item.active
-      -#=image_tag 'slide-01.jpg'
-      %h1
-        %span Nice marketing message comes here
-      %button.btn.btn-large.btn-success Try out now for free
+      =image_tag 'slide1.jpg'
     .item
       =image_tag 'slide-02.jpg'
+      .container
+        .carousel-caption
+          %h1 Human Sensor has made the dream of marketing experts come true!
+          %p.lead By means of a special, biometric measuring algorithm...
+          =link_to 'Sign up today', '#', class: 'btn btn-large btn-danger'
     .item
       =image_tag 'slide-03.jpg'
   %a.carousel-control.left{href: "#myCarousel", "data-slide" => 'prev'} &lsaquo;
   %a.carousel-control.right{href: "#myCarousel", "data-slide" => 'next'} &rsaquo;
+
+.container.marketing
+  .row
+    .span3
+      =image_tag('slide-01.jpg')
+      %h3 Download our presentation
+      %p This is the text in red
+      =link_to 'More details >>', '#', class: 'more'
+    .span3
+      =image_tag('slide-01.jpg')
+      %h3 There will be something
+      %p This is the text in red
+      =link_to 'More details >>', '#', class: 'more'
+    .span3
+      =image_tag('slide-01.jpg')
+      %h3 A nice message again
+      %p This is the text in red
+      =link_to 'More details >>', '#', class: 'more'
+    .span3
+      =image_tag('slide-01.jpg')
+      %h3 We are the best
+      %p This is the text in red
+      =link_to 'More details >>', '#', class: 'more'

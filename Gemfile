@@ -7,6 +7,21 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'sqlite3'
 
+gem 'coffee-rails', '~> 4.0.0.beta1'
+
+gem 'uglifier', '>= 1.0.3'
+
+gem 'bootstrap-sass'
+gem 'formtastic-bootstrap'
+gem 'bootstrap-datepicker-rails'
+
+gem 'formtastic'
+
+gem 'haml'
+gem 'haml-rails'
+gem 'redcarpet'
+
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -26,6 +41,7 @@ group :assets do
 
   gem 'haml'
   gem 'haml-rails'
+  gem 'redcarpet'
 
 
 end
@@ -34,6 +50,8 @@ gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+
+gem 'jquery-turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'
@@ -64,6 +82,15 @@ group :development, :test do
 
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+
+  gem 'rb-fsevent'
+  gem 'rb-inotify'
+  gem 'meta_request'
+
+  gem 'hirb'
 end
 
 group :test do
