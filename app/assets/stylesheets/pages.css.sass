@@ -54,7 +54,7 @@ body
   left: 0
   right: 0
   z-index: 10
-  margin-top: 100px
+  margin-top: 81px
   margin-bottom: -90px
   /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar.
   .navbar!
@@ -90,13 +90,14 @@ body
 /* Carousel base class
 
 .carousel
-  margin-bottom: 60px
+  margin-bottom: 20px
   border-top: solid 1px red
   .container
     position: relative
     z-index: 9
 
 .carousel-control
+  color: red
   height: 80px
   margin-top: 0
   font-size: 120px
@@ -104,16 +105,21 @@ body
   background-color: transparent
   border: 0
   z-index: 10
+  opacity: 0.3
+  &:hover
+    color: red
+    opacity: 1
 
 .carousel
   .item
+    max-height: 500px
     height: 500px
   img
     position: absolute
     top: 0
     left: 0
     min-width: 100%
-    height: 500px
+    height: auto
 
 .carousel-caption
   background-color: transparent
@@ -121,10 +127,10 @@ body
   max-width: 550px
   padding: 0 20px
   margin-top: 200px
-  h1, .lead
+  p, h1, .lead
     margin: 0
     line-height: 1.25
-    color: #fff
+    color: #000000
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
   .btn
     margin-top: 10px
@@ -135,50 +141,26 @@ body
 /* Center align the text within the three columns below the carousel
 
 .marketing
-  .span3
+  max-width: 960px
+  margin-left: auto
+  margin-right: auto
+  .span4
     text-align: center
   h3
     font-weight: normal
     border-bottom: solid 1px red
-  .span3 p
+  .span4 p
     margin-left: 10px
     margin-right: 10px
   .more
     color: red
   img
-    max-width: 150px
+    max-width: 300px
     max-height: 150px
+    width: 100%
+    height: 100%
+    border: 1px solid red
 
-/* Featurettes
- *-------------------------
-
-.featurette-divider
-  margin: 80px 0
-/* Space out the Bootstrap <hr> more
-
-.featurette
-  padding-top: 120px
-  /* Vertically center images part 1: add padding above and below text.
-  overflow: hidden
-/* Vertically center images part 2: clear their floats.
-
-.featurette-image
-  margin-top: -120px
-  /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it.
-  &.pull-left
-    margin-right: 40px
-  &.pull-right
-    margin-left: 40px
-
-/* Give some space on the sides of the floated elements so text doesn't run right into it.
-
-/* Thin out the marketing headings
-
-.featurette-heading
-  font-size: 50px
-  font-weight: 300
-  line-height: 1
-  letter-spacing: -1px
 
 /* FOOTER CSS
   -------------------------------------------------- */
@@ -188,13 +170,16 @@ footer
   border-top: 1px red solid
   p
     padding-top: 10px
-
-
+  .middle
+    text-align: center
 
 /* RESPONSIVE CSS
  *--------------------------------------------------
 
 @media (max-width: 979px)
+  .logo
+    img
+      height: 40px
   .container.navbar-wrapper
     margin-bottom: 0
     width: auto
@@ -203,10 +188,11 @@ footer
     margin: -20px 0
   .carousel
     .item
-      height: 500px
+      max-height: 500px
+      height: auto
     img
       width: auto
-      height: 500px
+      max-height: 500px
   .featurette
     height: auto
     padding: 0
@@ -218,6 +204,9 @@ footer
       margin: 0 auto 20px
 
 @media (max-width: 767px)
+  .logo
+    img
+      height: 40px
   .navbar-inner
     margin: -20px
   .carousel
@@ -225,19 +214,21 @@ footer
     margin-right: -20px
     .container!
       .item, img
-        height: 300px
+        height: 400px
   .carousel-caption
     width: 65%
     padding: 0 70px
-    margin-top: 100px
+    margin-top: 80px
     h1
       font-size: 30px
-    .lead, .btn
-      font-size: 18px
-  .marketing .span4 + .span4
-    margin-top: 40px
-  .featurette-heading
-    font-size: 30px
-  .featurette .lead
-    font-size: 18px
-    line-height: 1.5
+    .lead, .btn, p
+      font-size: 20px
+  .marketing
+    .span4
+      margin-top: 40px
+    h3, a
+      font-size: 15px
+      line-height: 16px
+      border: none
+  footer
+    display: none

@@ -1,42 +1,31 @@
 #myCarousel.carousel.slide
   %ol.carousel-indicators
     %li.active{data: {target: '#myCarousel', slide_to: '0'}}
-    %li{data: {target: '#myCarousel', slide_to: '1'}}
-    %li{data: {target: '#myCarousel', slide_to: '2'}}
+    -i=1
+    -(@slideshow_length-1).times do
+      %li{data: {target: '#myCarousel', slide_to: "#{i}"}}
+      -i+=1
   .carousel-inner
-    .item.active
-      =image_tag 'slide1.jpg'
-    .item
-      =image_tag 'slide-02.jpg'
-      .container
-        .carousel-caption
-          %h1 Human Sensor has made the dream of marketing experts come true!
-          %p.lead By means of a special, biometric measuring algorithm...
-          =link_to 'Sign up today', '#', class: 'btn btn-large btn-danger'
-    .item
-      =image_tag 'slide-03.jpg'
+    -i=0
+    -@slideshow_content.each do |content|
+      .item{class: ('active' if (i==0))}
+        =image_tag content[:image]
+        .container
+          .carousel-caption
+            %h1=content[:h1]
+            %p.lead=content[:h2]
+      -i+=1
   %a.carousel-control.left{href: "#myCarousel", "data-slide" => 'prev'} &lsaquo;
   %a.carousel-control.right{href: "#myCarousel", "data-slide" => 'next'} &rsaquo;
 
-.container.marketing
-  .row
-    .span3
-      =image_tag('slide-01.jpg')
-      %h3 Download our presentation
-      %p This is the text in red
-      =link_to 'More details >>', '#', class: 'more'
-    .span3
-      =image_tag('slide-01.jpg')
-      %h3 There will be something
-      %p This is the text in red
-      =link_to 'More details >>', '#', class: 'more'
-    .span3
-      =image_tag('slide-01.jpg')
-      %h3 A nice message again
-      %p This is the text in red
-      =link_to 'More details >>', '#', class: 'more'
-    .span3
-      =image_tag('slide-01.jpg')
-      %h3 We are the best
-      %p This is the text in red
-      =link_to 'More details >>', '#', class: 'more'
+.container-fluid
+  .marketing
+    .row-fluid
+      .span4.offset1
+        =link_to image_tag('presentation.png'), 'keocko_presentation.pdf'
+        %h3 Download our detailed presentation
+        =link_to 'Download pdf', 'keocko_presentation.pdf', class: 'more'
+      .span4.offset2
+        =image_tag('contact.png')
+        %h3 Contact us for further information
+        =link_to 'Contact details', '#', class: 'more'
