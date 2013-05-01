@@ -1,3 +1,4 @@
+- content_for(:title, "Keocko.com")
 #myCarousel.carousel.slide
   %ol.carousel-indicators
     %li.active{data: {target: '#myCarousel', slide_to: '0'}}
@@ -26,6 +27,6 @@
         %h3 Download our detailed presentation
         =link_to 'Download pdf', 'keocko_presentation.pdf', class: 'more'
       .span4.offset2
-        =image_tag('contact.png')
+        =link_to image_tag('contact.png'), contact_path
         %h3 Contact us for further information
-        =link_to 'Contact details', '#', class: 'more'
+        =link_to 'Contact details', contact_path, class: 'more'

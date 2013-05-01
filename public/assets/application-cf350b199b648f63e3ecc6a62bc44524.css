@@ -2755,19 +2755,19 @@ table th[class*="span"],
   background-image: url("/assets/glyphicons-halflings-white.png"); }
 
 .icon-glass {
-  background-position: 0 0; }
+  background-position: 0      0; }
 
 .icon-music {
-  background-position: -24px 0; }
+  background-position: -24px  0; }
 
 .icon-search {
-  background-position: -48px 0; }
+  background-position: -48px  0; }
 
 .icon-envelope {
-  background-position: -72px 0; }
+  background-position: -72px  0; }
 
 .icon-heart {
-  background-position: -96px 0; }
+  background-position: -96px  0; }
 
 .icon-star {
   background-position: -120px 0; }
@@ -2815,19 +2815,19 @@ table th[class*="span"],
   background-position: -456px 0; }
 
 .icon-home {
-  background-position: 0 -24px; }
+  background-position: 0      -24px; }
 
 .icon-file {
-  background-position: -24px -24px; }
+  background-position: -24px  -24px; }
 
 .icon-time {
-  background-position: -48px -24px; }
+  background-position: -48px  -24px; }
 
 .icon-road {
-  background-position: -72px -24px; }
+  background-position: -72px  -24px; }
 
 .icon-download-alt {
-  background-position: -96px -24px; }
+  background-position: -96px  -24px; }
 
 .icon-download {
   background-position: -120px -24px; }
@@ -2875,19 +2875,19 @@ table th[class*="span"],
   background-position: -456px -24px; }
 
 .icon-tag {
-  background-position: 0 -48px; }
+  background-position: 0      -48px; }
 
 .icon-tags {
-  background-position: -25px -48px; }
+  background-position: -25px  -48px; }
 
 .icon-book {
-  background-position: -48px -48px; }
+  background-position: -48px  -48px; }
 
 .icon-bookmark {
-  background-position: -72px -48px; }
+  background-position: -72px  -48px; }
 
 .icon-print {
-  background-position: -96px -48px; }
+  background-position: -96px  -48px; }
 
 .icon-camera {
   background-position: -120px -48px; }
@@ -2935,19 +2935,19 @@ table th[class*="span"],
   background-position: -456px -48px; }
 
 .icon-pencil {
-  background-position: 0 -72px; }
+  background-position: 0      -72px; }
 
 .icon-map-marker {
-  background-position: -24px -72px; }
+  background-position: -24px  -72px; }
 
 .icon-adjust {
-  background-position: -48px -72px; }
+  background-position: -48px  -72px; }
 
 .icon-tint {
-  background-position: -72px -72px; }
+  background-position: -72px  -72px; }
 
 .icon-edit {
-  background-position: -96px -72px; }
+  background-position: -96px  -72px; }
 
 .icon-share {
   background-position: -120px -72px; }
@@ -2995,19 +2995,19 @@ table th[class*="span"],
   background-position: -456px -72px; }
 
 .icon-plus-sign {
-  background-position: 0 -96px; }
+  background-position: 0      -96px; }
 
 .icon-minus-sign {
-  background-position: -24px -96px; }
+  background-position: -24px  -96px; }
 
 .icon-remove-sign {
-  background-position: -48px -96px; }
+  background-position: -48px  -96px; }
 
 .icon-ok-sign {
-  background-position: -72px -96px; }
+  background-position: -72px  -96px; }
 
 .icon-question-sign {
-  background-position: -96px -96px; }
+  background-position: -96px  -96px; }
 
 .icon-info-sign {
   background-position: -120px -96px; }
@@ -3055,19 +3055,19 @@ table th[class*="span"],
   background-position: -456px -96px; }
 
 .icon-exclamation-sign {
-  background-position: 0 -120px; }
+  background-position: 0      -120px; }
 
 .icon-gift {
-  background-position: -24px -120px; }
+  background-position: -24px  -120px; }
 
 .icon-leaf {
-  background-position: -48px -120px; }
+  background-position: -48px  -120px; }
 
 .icon-fire {
-  background-position: -72px -120px; }
+  background-position: -72px  -120px; }
 
 .icon-eye-open {
-  background-position: -96px -120px; }
+  background-position: -96px  -120px; }
 
 .icon-eye-close {
   background-position: -120px -120px; }
@@ -3118,19 +3118,19 @@ table th[class*="span"],
   background-position: -456px -118px; }
 
 .icon-hdd {
-  background-position: 0 -144px; }
+  background-position: 0      -144px; }
 
 .icon-bullhorn {
-  background-position: -24px -144px; }
+  background-position: -24px  -144px; }
 
 .icon-bell {
-  background-position: -48px -144px; }
+  background-position: -48px  -144px; }
 
 .icon-certificate {
-  background-position: -72px -144px; }
+  background-position: -72px  -144px; }
 
 .icon-thumbs-up {
-  background-position: -96px -144px; }
+  background-position: -96px  -144px; }
 
 .icon-thumbs-down {
   background-position: -120px -144px; }
@@ -5840,6 +5840,9 @@ body {
   display: block;
   height: 70px; }
 
+.article-wrapper {
+  margin-top: 70px; }
+
 /* CUSTOMIZE THE NAVBAR
  *-------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
@@ -5849,7 +5852,7 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
-  margin-top: 100px;
+  margin-top: 81px;
   margin-bottom: -90px;
   /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */ }
   .navbar-wrapper .navbar! {
@@ -5878,29 +5881,35 @@ body {
  *-------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   border-top: solid 1px red; }
   .carousel .container {
     position: relative;
     z-index: 9; }
 
 .carousel-control {
+  color: red;
   height: 80px;
   margin-top: 0;
   font-size: 120px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   background-color: transparent;
   border: 0;
-  z-index: 10; }
+  z-index: 10;
+  opacity: 0.3; }
+  .carousel-control:hover {
+    color: red;
+    opacity: 1; }
 
 .carousel .item {
+  max-height: 500px;
   height: 500px; }
 .carousel img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px; }
+  height: auto; }
 
 .carousel-caption {
   background-color: transparent;
@@ -5908,10 +5917,10 @@ body {
   max-width: 550px;
   padding: 0 20px;
   margin-top: 200px; }
-  .carousel-caption h1, .carousel-caption .lead {
+  .carousel-caption p, .carousel-caption h1, .carousel-caption .lead {
     margin: 0;
     line-height: 1.25;
-    color: white;
+    color: black;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
   .carousel-caption .btn {
     margin-top: 10px; }
@@ -5919,43 +5928,26 @@ body {
 /* MARKETING CONTENT
  *-------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
-.marketing .span3 {
-  text-align: center; }
-.marketing h3 {
-  font-weight: normal; }
-.marketing .span3 p {
-  margin-left: 10px;
-  margin-right: 10px; }
-.marketing .more {
-  color: red; }
-
-/* Featurettes
- *------------------------- */
-.featurette-divider {
-  margin: 80px 0; }
-
-/* Space out the Bootstrap <hr> more */
-.featurette {
-  padding-top: 120px;
-  /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; }
-
-/* Vertically center images part 2: clear their floats. */
-.featurette-image {
-  margin-top: -120px;
-  /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */ }
-  .featurette-image.pull-left {
-    margin-right: 40px; }
-  .featurette-image.pull-right {
-    margin-left: 40px; }
-
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px; }
+.marketing {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .marketing .span4 {
+    text-align: center; }
+  .marketing h3 {
+    font-weight: normal;
+    border-bottom: solid 1px red; }
+  .marketing .span4 p {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .marketing .more {
+    color: red; }
+  .marketing img {
+    max-width: 300px;
+    max-height: 150px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red; }
 
 /* FOOTER CSS
  * -------------------------------------------------- */
@@ -5965,9 +5957,15 @@ footer {
   footer p {
     padding-top: 10px; }
 
+.middle {
+  text-align: center; }
+
 /* RESPONSIVE CSS
  *-------------------------------------------------- */
 @media (max-width: 979px) {
+  .logo img {
+    height: 40px; }
+
   .container.navbar-wrapper {
     margin-bottom: 0;
     width: auto; }
@@ -5977,10 +5975,11 @@ footer {
     margin: -20px 0; }
 
   .carousel .item {
-    height: 500px; }
+    max-height: 500px;
+    height: auto; }
   .carousel img {
     width: auto;
-    height: 500px; }
+    max-height: 500px; }
 
   .featurette {
     height: auto;
@@ -5992,6 +5991,9 @@ footer {
     max-width: 40%;
     margin: 0 auto 20px; } }
 @media (max-width: 767px) {
+  .logo img {
+    height: 40px; }
+
   .navbar-inner {
     margin: -20px; }
 
@@ -5999,23 +6001,23 @@ footer {
     margin-left: -20px;
     margin-right: -20px; }
     .carousel .container! .item, .carousel .container! img {
-      height: 300px; }
+      height: 400px; }
 
   .carousel-caption {
     width: 65%;
     padding: 0 70px;
-    margin-top: 100px; }
+    margin-top: 80px; }
     .carousel-caption h1 {
       font-size: 30px; }
-    .carousel-caption .lead, .carousel-caption .btn {
-      font-size: 18px; }
+    .carousel-caption .lead, .carousel-caption .btn, .carousel-caption p {
+      font-size: 20px; }
 
-  .marketing .span4 + .span4 {
+  .marketing .span4 {
     margin-top: 40px; }
+  .marketing h3, .marketing a {
+    font-size: 15px;
+    line-height: 16px;
+    border: none; }
 
-  .featurette-heading {
-    font-size: 30px; }
-
-  .featurette .lead {
-    font-size: 18px;
-    line-height: 1.5; } }
+  footer {
+    display: none; } }

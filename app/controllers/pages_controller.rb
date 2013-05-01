@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
 
   def home
-     @slideshow_content = [
+    @title = "Keocko.com"
+    @slideshow_content = [
          {h1: 'Human detection', h2: 'Real-time consumer statistics<br /> - measurable efficiency'.html_safe, image: 'keocko_slide1.jpg'},
          {h1: 'Human Sensor', h2: 'has made the dream of marketing experts<br /> come true!'.html_safe, image: 'keocko_slide2.jpg'},
          {h1: 'Our reports', h2: 'are about Your customers', image: 'keocko_slide3.jpg'},
