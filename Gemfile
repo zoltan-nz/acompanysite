@@ -9,7 +9,7 @@ gem 'sqlite3'
 
 gem 'coffee-rails', '~> 4.0.0.beta1'
 
-gem 'uglifier', '>= 1.0.3'
+gem 'uglifier'
 
 gem 'bootstrap-sass'
 gem 'formtastic-bootstrap'
@@ -31,7 +31,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 
   gem 'bootstrap-sass'
   gem 'formtastic-bootstrap'
